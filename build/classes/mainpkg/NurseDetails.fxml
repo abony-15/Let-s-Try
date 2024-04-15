@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.NurseDetailsController">
+    <!-- Nurse Details Label -->
+    <Label layoutX="473.0" layoutY="1.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Nurse Details" />
+    <Label layoutX="23.0" layoutY="72.0" text="Nurse Name" />
+    <Label layoutX="23.0" layoutY="128.0" prefHeight="21.0" prefWidth="83.0" text="Nurse ID" />
+    <Label layoutX="23.0" layoutY="184.0" text="Phone Number" />
+    <TextField fx:id="nurseNameField" layoutX="155.0" layoutY="67.0" />
+    <TextField fx:id="nurseIDField" layoutX="155.0" layoutY="123.0" />
+    <TextField fx:id="phoneNumberField" layoutX="155.0" layoutY="179.0" />
+    <Button fx:id="saveButton" layoutX="43.0" layoutY="387.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="225.0" text="Save" onAction="#handleSaveAction" />
+    <Label layoutX="22.0" layoutY="243.0" text="Blood Group" />
+    <TextField fx:id="bloodGroupField" layoutX="155.0" layoutY="238.0" />
+    <Label layoutX="23.0" layoutY="297.0" text="Age" />
+    <TextField fx:id="ageField" layoutX="155.0" layoutY="292.0" />
+    <TableView fx:id="nurseTableView" layoutX="366.0" layoutY="60.0" prefHeight="541.0" prefWidth="697.0">
+        <columns>
+            <TableColumn fx:id="nurseNameColumn" prefWidth="201.0" text="Nurse Name" />
+            <TableColumn fx:id="nurseIDColumn" prefWidth="154.0" text="Nurse ID" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="164.0" text="Phone Number" />
+            <TableColumn fx:id="bloodGroupColumn" prefWidth="104.0" text="Blood Group" />
+            <TableColumn fx:id="ageColumn" prefWidth="73.0" text="Age" />
+        </columns>
+    </TableView>
+</AnchorPane>
